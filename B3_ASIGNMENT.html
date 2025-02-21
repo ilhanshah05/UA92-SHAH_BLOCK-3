@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Country - Eastern European Market</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid flex-column">
+      <!-- Top Row (User Actions) -->
+      <div class="d-flex justify-content-end w-100 py-2">
+     
+        <a class="nav-link text-white me-3" href="B3_ASIGNMENT.html">Home</a>
+        <a class="nav-link text-white me-3" href="loginpage.html">Sign In / Register</a>
+        <a class="nav-link text-white me-3" href="fav.html">❤️ - Favorites</a>
+        <a class="nav-link text-white" href="basket.html">🛒 - Cart</a>
+      </div>
+
+      <!-- Bottom Row (Logo, Search Bar, and Navigation) -->
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        
+        <!-- Logo (Company Name) -->
+        <a class="navbar-brand" href="#">
+          <img src="cool logo.png" alt="CoolCountryLogo" width="150px">
+        </a>
+
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-lg-center">
+            
+            <!-- Search Bar -->
+            <form class="d-flex my-2 my-lg-0 mx-auto" style="max-width: 400px;">
+              <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit"><b>Search</b></button>
+            </form>
+
+            <!-- Country Links -->
+            <ul class="navbar-nav d-flex flex-column flex-lg-row gap-2 gap-lg-3 text-center">
+              <li class="nav-item"><a class="nav-link text-white" href="poland.html">Poland</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="romania.html">Romania</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Hungary</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Bulgaria</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Lithuania</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Slovakia</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+  <div id="ce" class="carousel slide" data-bs-ride="true" >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="EU.jpg" class="w-100" alt="eu...">
+      </div>
+      <div class="carousel-item">
+        <img src="eumap.jpg" class="w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.polo-market.com/wp-content/uploads/2016/08/spozywcze-zestaw.jpg" class="w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="COOL1.jpeg" class="w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.usfunds.com/app/uploads/2022/09/4-1.png" class="w-100" alt="eu...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://lh3.googleusercontent.com/places/AJQcZqKvS9CznGs1eCUCcvFBOjXXHUmvLwYLKfydbmw2LOtBcEDYdIBfDex2wUdjkGhJr8QO4bEjc3qfrzaaQ9tuFPbVrc0m55H3JQ=s1600-w5920" class="w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.coxandkings.co.uk/-/media/cox-and-kings/images/page-header-images/destinations/europe/poland/page-header--old-town-gdansk-poland-shutterstock1180380538.jpg?w=1920&h=940" class="w-100" alt="poland...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://external-preview.redd.it/EMDOwVlKrC7V5D4n6cop1RG2FiEp2LQDpAl2Iw8U8iI.jpg?width=640&crop=smart&auto=webp&s=938c83208d474226034a4ef95f0bcf12f20813e4" class="w-100" alt="...">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" 
+    data-bs-target="#ce" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" 
+    data-bs-target="#ce" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-2 d-none d-md-block sidebar">
+        <div class="position-sticky">
+          <h5 class="mb-3">Categories</h5>
+          <div class="list-group">
+            <a href="allproducts.html" class="list-group-item list-group-item-action">All Products</a>
+            <a href="#" class="list-group-item list-group-item-action">Alcohol & Spirits</a>
+            <a href="#" class="list-group-item list-group-item-action">Bakery</a>
+            <a href="#" class="list-group-item list-group-item-action">Beverages</a>
+            <a href="#" class="list-group-item list-group-item-action">Chilled</a>
+            <a href="#" class="list-group-item list-group-item-action">Frozen</a>
+            <a href="#" class="list-group-item list-group-item-action">Gluten-free</a>
+            <a href="#" class="list-group-item list-group-item-action">Fruits & Vegetables</a>
+            <a href="#" class="list-group-item list-group-item-action">Grains & Pulses</a>
+            <a href="#" class="list-group-item list-group-item-action">Pickles</a>
+            <a href="#" class="list-group-item list-group-item-action">Baking & Puddings</a>
+            <a href="#" class="list-group-item list-group-item-action">Beverages</a>
+            <a href="#" class="list-group-item list-group-item-action">Soft Drinks</a>
+            <a href="#" class="list-group-item list-group-item-action">Coffee & Tea</a>
+            <a href="#" class="list-group-item list-group-item-action">Savories</a>
+            <a href="#" class="list-group-item list-group-item-action">Snacks</a>
+            <a href="#" class="list-group-item list-group-item-action">Confectionery</a>
+            <a href="#" class="list-group-item list-group-item-action">Crisps</a>
+            <BR>
+            <a href="#" class="list-group-item list-group-item-action">PROMOTIONS & DEALS</a>
+          </div>
+        </div>
+      </nav>
+     
+      <!-- Main Content -->
+      <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+        <div class="card mb-4 shadow-sm" style="border: 2px solid rgb(251, 255, 0);">
+        <h1 class="my-4">Our Products</h1>
+        <div class="row g-4">
+          <!-- Eastern European Countries -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <a href="pol.html">
+                    <img src="pol1.jpg" class="card-img-top" alt="poland" />
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="pol.html" class="text-decoration-none text-dark">Poland</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        
+          
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <a href="rompro.html">
+                    <img src="romania.jpg" class="card-img-top" alt="Romania" />
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="rompro.html" class="text-decoration-none text-dark">Romania</a>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        
+          <div class="col-md-4">
+            <a href="#" class="text-decoration-none"></a>
+            <div class="card mb-4 shadow-sm">
+              <img src="bulg.jpg" class="card-img-top" alt="Bulgaria" />
+              <div class="card-body">
+                <h5 class="card-title">Bulgaria</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="hungary.jpg" class="card-img-top" alt="Hungary" />
+              <div class="card-body">
+                <h5 class="card-title">Hungary</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="Lithuania.jpeg" class="card-img-top" alt="Lithuania" />
+              <div class="card-body">
+                <h5 class="card-title">Lithuania</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="slovakia.jpg" class="card-img-top" alt="Slovakia" />
+              <div class="card-body">
+                <h5 class="card-title">Slovakia</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Categories -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="meat.jpg" class="card-img-top" alt="Cheese & Meats" />
+              <div class="card-body">
+                <h5 class="card-title">Cheese & Meats</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="coffee.jpg" class="card-img-top" alt="Beverages" />
+              <div class="card-body">
+                <h5 class="card-title">Beverages</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="confectionery.avif" class="card-img-top" alt="Confectionery" style="height: 202px;" />
+              <div class="card-body">
+                <h5 class="card-title">Confectionery</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="bakery.webp" class="card-img-top" alt="bakery" />
+              <div class="card-body">
+                <h5 class="card-title">Bakery</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="BAKING.jpg" class="card-img-top" alt="bakING" />
+              <div class="card-body">
+                <h5 class="card-title">Baking</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="grains.jpg" class="card-img-top" alt="Grains & Pulses" />
+              <div class="card-body">
+                <h5 class="card-title">Grains & Pulses</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="fruits.jpg" class="card-img-top" alt="Fruits & Vegetables" style="height: 202px; object-fit: cover;" />
+              <div class="card-body">
+                <h5 class="card-title">Fruits & Vegetables</h5>
+              </div>
+            </div>
+          </div>
+          <! Gluten free container !>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="gluten.webp" class="card-img-top" alt="Gluten-free" />
+              <div class="card-body">
+                <h5 class="card-title">Gluten-free</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vegan Container -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="vegan.jpg" class="card-img-top" alt="Vegetarian and Vegan" />
+              <div class="card-body">
+                <h5 class="card-title">Vegetarian and Vegan</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Cool Country - Eastern European Market. Everything freshly one click away.</p>
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>Email: support@coolcountry.com</p>
+      <p>Phone: +44 777 66890</p>
+    </div>
+  
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <a href="address.html">Address </a>
+      <a href="#">My Orders</a>
+      <a href="#">Reviews</a>
+      <a href="#">Requests</a>
+      
+    </div>
+  
+    <div class="footer-section footer-socials">
+      <h4>Follow Us</h4>
+      <a href="https://www.facebook.com/coolcountrypolskisklep" target="_blank">📘 Facebook</a>
+      <a href="#">📸 Instagram</a>
+      <a href="#">🐦 Twitter</a>
+    </div>
+  </footer>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Back to Top Button Script -->
+
+    <button id="back-to-top">Back to Top⬆ </button>
+
+    <script>
+      window.addEventListener('scroll', () => {
+        const backToTop = document.getElementById('back-to-top');
+        if (window.scrollY > 300) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+      });
+      
+      document.getElementById('back-to-top').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+     </script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Country - Eastern European Market</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid flex-column">
+      <!-- Top Row (User Actions) -->
+      <div class="d-flex justify-content-end w-100 py-2">
+     
+        <a class="nav-link text-white me-3" href="B3_ASIGNMENT.html">Home</a>
+        <a class="nav-link text-white me-3" href="loginpage.html">Sign In / Register</a>
+        <a class="nav-link text-white me-3" href="#">❤️ - Favorites</a>
+        <a class="nav-link text-white" href="basket.html">🛒 - Cart</a>
+      </div>
+
+      <!-- Bottom Row (Logo, Search Bar, and Navigation) -->
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        
+        <!-- Logo (Company Name) -->
+        <a class="navbar-brand" href="#">
+          <img src="cool logo.png" alt="Cool Country Logo" width="150px">
+        </a>
+
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-lg-center">
+            
+            <!-- Search Bar -->
+            <form class="d-flex my-2 my-lg-0 mx-auto" style="max-width: 400px;">
+              <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit"><b>Search</b></button>
+            </form>
+
+            <!-- Country Links -->
+            <ul class="navbar-nav d-flex flex-column flex-lg-row gap-2 gap-lg-3 text-center">
+              <li class="nav-item"><a class="nav-link text-white" href="poland.html">Poland</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="romania.html">Romania</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Hungary</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Bulgaria</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Lithuania</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Slovakia</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<h1>Shop Eastern European Products -> Poland </h1>
+
+<!-- Product Section 1 -->
+<section class="products">
+    <div class="product-card" data-id="6" data-name="Virtu Pierogi" data-price="2.99" data-image="https://lh4.googleusercontent.com/proxy/Ot7y_cFW_xrmDetF_qAqehdqzbrznmX1y_QTdfqM8llG9khKNCJGJfUqCo6cbxrxVaXLExBJjEPul_CVFSkbRu0d99WlqXjdzhxv">
+        <img src="https://lh4.googleusercontent.com/proxy/Ot7y_cFW_xrmDetF_qAqehdqzbrznmX1y_QTdfqM8llG9khKNCJGJfUqCo6cbxrxVaXLExBJjEPul_CVFSkbRu0d99WlqXjdzhxv" alt="Pierogi">
+        <h3>Virtu Pierogi</h3>
+        <p>Traditional Polish dumplings filled with Cottage Cheese and Potatoes <b>400g</b></p>
+        <span class="price">£2.99</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <div class="product-card" data-id="7" data-name="Sokolow Kiełbasa" data-price="3.49" data-image="https://assets.sainsburys-groceries.co.uk/gol/7547381/1/640x640.jpg">
+        <img src="https://assets.sainsburys-groceries.co.uk/gol/7547381/1/640x640.jpg" alt="Kielbasa">
+        <h3>Sokolow Kiełbasa</h3>
+        <p>Best smoked Silesia Sausage <b>340g</b></p>
+        <span class="price">£3.49</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <div class="product-card" data-id="8" data-name="Pamapol Bigos" data-price="1.99" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCYzNe_K8luhRTs4j4yI_iU3dv_98Fj3TEA&s">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCYzNe_K8luhRTs4j4yI_iU3dv_98Fj3TEA&s" alt="Bigos">
+        <h3>Pamapol Bigos</h3>
+        <p>Traditional Polish Bigos Domowy (stew)</p>
+        <span class="price">£1.99</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <div class="product-card" data-id="9" data-name="Krasnystaw Chłodnik" data-price="1.09" data-image="https://fermentedfoodfreak.com/wp-content/uploads/2015/06/chlodnik-big.png">
+        <img src="https://fermentedfoodfreak.com/wp-content/uploads/2015/06/chlodnik-big.png" alt="Chłodnik">
+        <h3>Krasnystaw Chłodnik</h3>
+        <p>Refreshing fermented sour milk and beetroot juice summer favorite. <b>420ml</b></p>
+        <span class="price">£1.09</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Product Section 2 -->
+<section class="products">
+    <div class="product-card" data-id="10" data-name="Makowiec" data-price="3.99" data-image="https://i.etsystatic.com/32747238/r/il/8475ac/3502969177/il_1080xN.3502969177_l1du.jpg">
+        <img src="https://i.etsystatic.com/32747238/r/il/8475ac/3502969177/il_1080xN.3502969177_l1du.jpg" alt="Makowiec">
+        <h3>Makowiec</h3>
+        <p>Polish poppy seed cake, a must-have for holidays.</p>
+        <span class="price">£3.99</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <div class="product-card" data-id="1" data-name="Winiary Barszcz mix" data-price="0.79" data-image="https://polishshoponline.co.uk/cdn/shop/products/winiary-barszcz-czerwony-49-g-3ma8gj_1000x.webp?v=1676382520">
+        <img src="https://polishshoponline.co.uk/cdn/shop/products/winiary-barszcz-czerwony-49-g-3ma8gj_1000x.webp?v=1676382520" alt="Barszcz">
+        <h3>Winiary Barszcz mix</h3>
+        <p>Classic Polish Red Borscht Beetroot Express Soup <b>45g</b></p>
+        <span class="price">£0.79</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+    <div class="product-card" data-id="2" data-name="Winary Żurek express Mix" data-price="0.79" data-image="https://cdn11.bigcommerce.com/s-f9u3z5bg2/images/stencil/500x500/products/2002/12660/Winiary_Sour_Rye_Soup__22968.1694293242.jpg?c=2">
+        <img src="https://cdn11.bigcommerce.com/s-f9u3z5bg2/images/stencil/500x500/products/2002/12660/Winiary_Sour_Rye_Soup__22968.1694293242.jpg?c=2" alt="Żurek">
+        <h3>Winary Żurek express Mix</h3>
+        <p>Express Traditional Polish sour rye soup mix with sausage and eggs.</p>
+        <span class="price">£0.79</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <div class="product-card" data-id="3" data-name="MELVIT Pęczak" data-price="1.99" data-image="https://polish-shop.ch/7144-thickbox_default/kujawski-pearl-barley-groats-melvit-900g.jpg">
+        <img src="https://polish-shop.ch/7144-thickbox_default/kujawski-pearl-barley-groats-melvit-900g.jpg" alt="Pęczak">
+        <h3>MELVIT Pęczak</h3>
+        <p>Polish pearl barley, a nutritious staple in many dishes <b>400G</b></p>
+        <span class="price">£1.99</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Product Section 3 -->
+<section class="products">
+    <div class="product-card" data-id="4" data-name="Lisner Vegetable Salad" data-price="3.49" data-image="https://assets.sainsburys-groceries.co.uk/gol/8092615/1/640x640.jpg">
+        <img src="https://assets.sainsburys-groceries.co.uk/gol/8092615/1/640x640.jpg" alt="Mizeria">
+        <h3>Lisner Vegetable Salad</h3>
+        <p>Traditional Polish Lisner Vegetable Salad with Peas <b>500g</b></p>
+        <span class="price">£3.49</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+    
+    <div class="product-card" data-id="5" data-name="WAWEL Krówki" data-price="3.49" data-image="https://polishshoponline.co.uk/cdn/shop/products/WAWELKROWKAMILKCREAMFUDGE250G_1000x.png?v=1656534453">
+        <img src="https://polishshoponline.co.uk/cdn/shop/products/WAWELKROWKAMILKCREAMFUDGE250G_1000x.png?v=1656534453" alt="Krówki">
+        <h3>WAWEL Krówki</h3>
+        <p>Polish fudge candies with a creamy, chewy texture.<b>250g</b></p>
+        <span class="price">£3.49</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <div class="product-card" data-id="6" data-name="Zubrowka Biata vodka" data-price="18.99" data-image="https://m.media-amazon.com/images/I/91rDlvCMlrL._AC_UF894,1000_QL80_.jpg">
+        <img src="https://m.media-amazon.com/images/I/91rDlvCMlrL._AC_UF894,1000_QL80_.jpg" alt="Mămăligă">
+        <h3>Zubrowka Biata vodka</h3>
+        <p>Classic white Polish vodka.<b> 1L</b></p>
+        <span class="price">£18.99</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+    <div class="product-card" data-id="7" data-name="Bakalland Masa Makowa" data-price="3.99" data-image="https://uk.foodplus.eu/userdata/public/gfx/23171/355.png">
+        <img src="https://uk.foodplus.eu/userdata/public/gfx/23171/355.png" alt="Mămăligă">
+        <h3>Bakalland Masa Makowa</h3>
+        <p>Poppy Seed Filling with Dried Fruit and Nuts <b>850g</b></p>
+        <span class="price">£3.99</span>
+        <div class="buttons">
+            <button class="add-to-basket">Add to Basket</button>
+            <button class="fav-btn"><i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".product-card").forEach(product => {
+            let addToBasketBtn = product.querySelector(".add-to-basket");
+    
+            addToBasketBtn.addEventListener("click", function () {
+                let productId = product.dataset.id;
+                let productName = product.dataset.name;
+                let productPrice = parseFloat(product.dataset.price);
+                let productImage = product.dataset.image;
+    
+                addToBasket(productId, productName, productPrice, productImage);
+            });
+        });
+    });
+    
+    function addToBasket(id, name, price, image) {
+        let basket = JSON.parse(localStorage.getItem("basket")) || [];
+    
+        let existingProduct = basket.find(item => item.id == id);
+        if (existingProduct) {
+            existingProduct.quantity += 1;
+        } else {
+            basket.push({ id, name, price, image, quantity: 1 });
+        }
+    
+        localStorage.setItem("basket", JSON.stringify(basket));
+        alert(`${name} added to the basket!`);
+    }
+    
+    function addToFavorites(id, name, price, image) {
+        let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+        
+        let existingProduct = favorites.find(item => item.id == id);
+        if (!existingProduct) {
+            favorites.push({ id, name, price, image });
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+            alert(`${name} added to favorites!`);
+        } else {
+            alert(`${name} is already in your favorites!`);
+        }
+    }
+    </script>
+
+</body>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Cool Country - Eastern European Market. Everything freshly one click away.</p>
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>Email: support@coolcountry.com</p>
+      <p>Phone: +44 777 66890</p>
+    </div>
+  
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <a href="address.html">Address </a>
+      <a href="#">My Orders</a>
+      <a href="#">Reviews</a>
+      <a href="#">Requests</a>
+      
+    </div>
+  
+    <div class="footer-section footer-socials">
+      <h4>Follow Us</h4>
+      <a href="https://www.facebook.com/coolcountrypolskisklep" target="_blank">📘 Facebook</a>
+      <a href="#">📸 Instagram</a>
+      <a href="#">🐦 Twitter</a>
+    </div>
+  </footer>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom Back to Top Button Script -->
+
+    <button id="back-to-top">⬆</button>
+
+    <script src="web.js"></script>
+</body>
+</html>
+
+

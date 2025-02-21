@@ -1,0 +1,334 @@
+/* ============================
+        General Body Styling
+=============================== */
+body {
+    background-color: #d8d5d5;
+    font-family: 'Times New Roman', Times, serif 10px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================
+           Navbar Styling
+=============================== */
+.navbar {
+    background-color: #000000;
+    padding: 0;
+    font-size: 20px;
+    flex-direction: column;
+    border-bottom: 3px solid gold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-top {
+    background-color: #111;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #444;
+}
+
+.navbar-top a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar-top a:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.1);
+}
+
+.navbar-bottom {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 190px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.nav-item {
+    border: solid Gold;
+    border-radius: 10px;
+    background-color: #edcb24;
+    padding: 5px 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link {
+    color: #222121;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px black;
+}
+
+/* ============================
+   Button and Search Bar Styling
+=============================== */
+form.d-flex button {
+    height: 45px;
+    padding: 0 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid gold;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form.d-flex button:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form.d-flex input[type="search"] {
+    width: 320px;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gold;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+form.d-flex input[type="search"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    transform: scale(1.02);
+}
+
+.button {
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.2s ease;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #74c0fc, #5c7cfa);
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Flexbox for responsive layout */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adds spacing between grid items */
+}
+
+/* Style for each card */
+.card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 200px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Style for images */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style for headings inside cards */
+.card h3 {
+    margin: 10px 0 5px;
+    color: #d32f2f;
+    font-size: 20px;
+}
+
+/* Style for descriptions */
+.card p {
+    font-size: 15px;
+    color: #555;
+}
+.card img {
+    border-radius: 50%;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#555;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid gold;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+#ce .carousel-inner {
+    height: 500px;
+    overflow: hidden;
+}
+
+#ce .carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.5s ease;
+    border: dashed 10px black;
+}
+
+#ce .carousel-item img:hover {
+    transform: scale(1.02);
+}
+
+/* ============================
+            Footer
+=============================== */
+footer {
+    background-color: #333;
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: larger;
+    color: rgb(254, 254, 254);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(255, 193, 24, 0.3);
+}
+p{
+    color: rgb(255, 255, 255);
+}
+.p1{
+    color:red;
+}
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+
+}
+
+.footer-section h4 {
+    font-family: 'Times New Roman', Times, serif WHITE;
+    margin-bottom: 15px;
+    border-bottom: 2px solid gold;
+    display: inline-block;
+    padding-bottom: 5px;
+   
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+/* ============================
+        Responsive Design
+=============================== */
+@media (max-width: 768px) {
+    .navbar,
+    .footer-section {
+        text-align: center;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+
+    #ce .carousel-inner {
+        height: 300px;
+    }
+
+    .navbar-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

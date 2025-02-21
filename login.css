@@ -1,0 +1,267 @@
+body{
+    font-family: 'Times New Roman', Times, serif Black;
+    font-size: larger;
+    align-items: center;
+    border: solid goldenrod 5PX;
+    
+
+}
+.navbar {
+    position: fixed;  /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays on top */
+    background-color: #000; /* Ensure visibility */
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    position: relative; /* Allow natural flow inside navbar */
+    max-width: 200px; /* Ensure it scales */
+}
+
+.navbar-brand img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    max-width: 150px; /* Restrict max size */
+}
+
+.wrapper {
+    margin-top: 80px; /* Adds space below navbar to prevent overlap */
+}
+
+/* Media Query: Adjusts navbar for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    .navbar-brand {
+        display: block;
+        margin: auto;
+    }
+
+    .navbar-brand img {
+        max-width: 120px; /* Reduce logo size on small screens */
+    }
+
+    .wrapper {
+        margin-top: 120px; /* Increase space to prevent overlap */
+    }
+}
+
+
+body {
+    overflow: auto; /* Allow scrolling */
+    background-size: cover; /* Ensure background image fits */
+}
+
+/* Change the color of navbar links */
+.nav-link {
+    color: #ffb700; /* White color for the links */
+    font-weight: bold;
+  }
+  
+  /* Change the color when hovering over navbar links */
+  .nav-link:hover {
+    color: #ffd700; /* Gold color on hover */
+  }
+  
+  /* Change the color of the navbar brand (logo text or logo link) */
+  .navbar-brand {
+    color: #d3d3d3; /* White color for the brand text or logo */
+  }
+  
+  /* Change the color when hovering over the navbar brand */
+  .navbar-brand:hover {
+    color: #ffd700; /* Gold color on hover */
+  }
+  
+
+  :root{
+    --accent-color: rgba(255, 0, 0, 0.732);
+    --base-color:rgb(253, 253, 253) ;
+    --text-color: #2E2B41;
+    --input-color: #F3F0FF;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15PX;
+    color: var(--text-color);
+    text-align: center;
+  }
+  body{
+    min-height: 100vh;
+    background-image: url(POLANDBACK.jpg);
+    background-size:auto;
+    background-position: right;
+    overflow: hidden;
+  }
+  .wrapper{
+    box-sizing: border-box;
+    background-color: var(--base-color);
+    height: 100vh;
+    width: max(40%, 600px);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h1{
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  form{
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  form > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  form label{
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    fill: var(--base-color);
+    color: var(--base-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  form input{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--input-color);
+    border-left: none;
+    background-color: var(--input-color);
+    transition: 150ms ease;
+  }
+  form input:hover{
+    border-color: var(--accent-color);
+  }
+  form input:focus{
+    outline: none;
+    border-color: var(--text-color);
+  }
+  div:has(input:focus) > label{
+    background-color: var(--text-color);
+  }
+  form input::placeholder{
+    color: var(--text-color);
+  }
+  form button{
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+  }
+  form button:hover{
+    background-color: var(--text-color);
+  }
+  form button:focus{
+    outline: none;
+    background-color: var(--text-color);
+  }
+  a{
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  @media(max-width: 1100px){
+    .wrapper{
+      width: min(600px, 100%);
+      border-radius: 0;
+    }
+  }
+  form div.incorrect label{
+    background-color: #f06272;
+  }
+  form div.incorrect input{
+    border-color: #f06272;
+  }
+  #error-message{
+    color:#f06272;
+  }
+/* ============================
+            Footer
+=============================== */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid gold;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+/* ============================
+        Responsive Design
+=============================== */
+@media (max-width: 768px) {
+    .navbar,
+    .footer-section {
+        text-align: center;
+    }
+}

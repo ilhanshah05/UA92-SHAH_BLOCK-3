@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Country - Eastern European Market</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container-fluid flex-column">
+      <!-- Top Row (User Actions) -->
+      <div class="d-flex justify-content-end w-100 py-2">
+     
+        <a class="nav-link text-white me-3" href="B3_ASIGNMENT.html">Home</a>
+        <a class="nav-link text-white me-3" href="loginpage.html">Sign In / Register</a>
+        <a class="nav-link text-white me-3" href="fav.html">❤️ - Favorites</a>
+        <a class="nav-link text-white" href="basket.html">🛒 - Cart</a>
+      </div>
+
+      <!-- Bottom Row (Logo, Search Bar, and Navigation) -->
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        
+        <!-- Logo (Company Name) -->
+        <a class="navbar-brand" href="#">
+          <img src="cool logo.png" alt="Cool Country Logo" width="150px">
+        </a>
+
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-lg-center">
+            
+            <!-- Search Bar -->
+            <form class="d-flex my-2 my-lg-0 mx-auto" style="max-width: 400px;">
+              <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit"><b>Search</b></button>
+            </form>
+
+            <!-- Country Links -->
+            <ul class="navbar-nav d-flex flex-column flex-lg-row gap-2 gap-lg-3 text-center">
+              <li class="nav-item"><a class="nav-link text-white" href="poland.html">Poland</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="romania.html">Romania</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Hungary</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Bulgaria</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Lithuania</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#">Slovakia</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+<div id="favorite-items"></div>
+<script src="favourite.js"></script>
+    <h2>Favorite Products</h2>
+    <div class="product-container" id="product-list"></div>
+    
+    <button><a  href="basket.html">Go to Basket</a> | <a href="B3_ASIGNMENT.html">Go to Home</a></button>
+
+
+    <div id="favorites-content"></div>
+    <button onclick="removeFromFavorites('${item.id}')">❌ Remove</button>
+
+
+<br>
+<style>
+.favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f4f4f4; /* Light grey background for a subtle look */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid #ccc; /* Soft grey border */
+}
+
+.favorite-item:hover {
+    transform: scale(1.05); /* Slightly enlarge when hovered */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.favorite-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Subtle border around the image */
+}
+
+.favorite-item .info {
+    flex-grow: 1;
+    padding: 0 15px;
+    color: #333; /* Dark grey text for good readability */
+}
+
+.favorite-item h3 {
+    font-size: 1.2em;
+    color: #222; /* Darker grey for the product name */
+    margin: 5px 0;
+}
+
+.favorite-item p {
+    font-size: 1em;
+    color: #777; /* Medium grey for price text */
+    margin: 5px 0;
+}
+
+.favorite-item .price {
+    font-weight: bold;
+    color: #ffcc00; /* Gold color for price to stand out */
+}
+
+.favorite-item button {
+    background: #333; /* Black background for buttons */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    font-size: 1em;
+}
+
+.favorite-item button:hover {
+    background: #ffcc00; /* Gold color for hover */
+    color: #333; /* Black text on gold hover */
+}
+
+#favorites-content {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff; /* White background for the favorites container */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.clear-favorites {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #d9534f; /* Red for 'clear' action */
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.clear-favorites:hover {
+    background: #c9302c; /* Darker red on hover */
+}
+
+
+</style>
+</head>
+<body>
+    <h1>Your Favorite Products</h1>
+<div id="favorites-content"></div>
+<button onclick="clearFavorites()">Clear Favorites</button>
+
+    
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+<p>&copy; 2025 Cool Country - Eastern European Market. Everything freshly one click away.</p>
+<!-- Footer Section -->
+<footer>
+<div class="footer-section">
+    <h4>Contact Us</h4>
+    <p>Email: support@coolcountry.com</p>
+    <p>Phone: +44 777 66890</p>
+</div>
+
+<div class="footer-section">
+    <h4>Quick Links</h4>
+    <a href="address.html">Address </a>
+    <a href="#">My Orders</a>
+    <a href="#">Reviews</a>
+    <a href="#">Requests</a>
+    
+</div>
+
+<div class="footer-section footer-socials">
+    <h4>Follow Us</h4>
+    <a href="https://www.facebook.com/coolcountrypolskisklep" target="_blank">📘 Facebook</a>
+    <a href="#">📸 Instagram</a>
+    <a href="#">🐦 Twitter</a>
+</div>
+</footer>
+</footer>
+
+<script href="favorites.js"></script>
+</body>
+</html>
